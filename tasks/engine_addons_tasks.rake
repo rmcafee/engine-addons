@@ -1,7 +1,6 @@
 require 'active_record'  
 require 'yaml'
 require File.dirname(__FILE__) + '/../lib/engine_addons'
-require 'ruby-debug'
 
 namespace :engine_addons do  
   desc "Migrate engine databases. Target engine with ENGINE='underscored_name' and VERSION=x"  
