@@ -12,6 +12,9 @@ rake engine_addons:migrate ENGINE='super_forum'
 # If you want to actually migrate down or to a certain version you can actually run:
 rake engine_addons:migrate ENGINE='super_forum' VERSION=0
 
+# You can also just migrate all of your engine apps 
+rake engine_addons:migrate_all
+
 # Each addon/plugin should keep it's own schema_migrations_info now.
 
 Copyright (c) 2009 Rahsun McAfee, released under the MIT license
