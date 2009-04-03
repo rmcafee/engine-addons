@@ -1,6 +1,6 @@
 EngineAddons
 ============
-I wanted to give the new Rails Engines support for database migrations but I wanted to keep the migrations separate from my application. There are situations where it works better if I can actually migrate just an engine/plugin separate from my application or other engine plugins.
+I wanted to give the new Rails Engines support for database migrations but I wanted to keep the migrations separate from my core application. There are situations where it works better if I can actually migrate just an engine/plugin separate from my application or other engine plugins.
 
 Example
 =======
