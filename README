@@ -1,0 +1,17 @@
+EngineAddons
+============
+I wanted to give the new Rails Engines support for database migrations but I wanted to keep the migrations separate from my application. There are situations where it works better if I can actually migrate just an engine/plugin separate from my application or other engine plugins.
+
+Example
+=======
+# So let's say you got an engine/plugin and you put it in your plugin directory. It's called 'super_forum'
+# now you can just move your db folder into your plugin just like 'apps' and 'config' and run:
+
+rake engine_addons:migrate ENGINE='super_forum'
+
+# If you want to actually migrate down or to a certain version you can actually run:
+rake engine_addons:migrate ENGINE='super_forum' VERSION=0
+
+# Each addon/plugin should keep it's own schema_migrations_info now.
+
+Copyright (c) 2009 Rahsun McAfee, released under the MIT license
